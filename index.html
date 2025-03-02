@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="w-full shadow-md flex border-solid bottom-6 items-center p-4 text-black justify-between bg-white">
+            <div class="flex">
+                <img class="w-6 h-6" src="./assets/logo.png" alt="logo">
+                <h1>Dev <span class=" font-extrabold">Board</span></h1>
+            </div>
+            <div class="flex p-3 gap-4">
+                <img id="checbook" class=" w-6 h-6" src="./assets/checkbox.png" alt="checbook">
+                <h1 id="twenty-three">23</h1>
+                <img id="them" class="w-6 h-6" src="./assets/theme-btn.png" alt="">
+
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="discoverSectionContainer"
+            class="flex w-3/4 border-solid bottom-6 items-center p-4 text-black justify-between ">
+            <div class=" bg-[#f4f7ff] flex gap-3 w-1/4">
+                <img id="checbook" class=" mt-3 w-6 h-6" src="./assets/checkbox.png" alt="checbook">
+                <div class="">
+                    <p>Task Assigned</p>
+                    <h3 id="six" class="text-lg">6</h3>
+                </div>
+            </div>
+            <div style="background: linear-gradient(to right, #3B82F6, #9333EA);"
+             id="fwd-to-desk" 
+             class=" flex p-4 gap-3 bg-linear-to-b from-blue-500 to-purple-600 w-2/4">
+                <img class=" w-12 h-12" src="./assets/board.png" alt="board">
+                <p>Discover Something New Today!</p>
+            </div>
+            <div class="flex gap-3 bg-[#f4f7ff] w-1/4">
+                <img class="w-6 h-6 items-center text-center mt-3 " src="./assets/calender.png" alt="">
+                <time datetime="wednesday, July 28 2025">wednesday, <br> July 28 2025</time>
+            </div>
+        </section>
+        <hr class="w-3/4">
+        <section
+            class="  w-3/4 items-center justify-center min-h-screen grid grid-cols-3 gap-4 p-4 shadow-lg">
+            <!-- <div class="border-stone-600 card bg-base-100 w-96 shadow-sm"> -->
+            <div class="rounded-lg p-4  h-80 w-70 shadow-md bg-gray-50 overflow-hidden">
+                <p>ShopEase</p>
+                <div class="card-body items-center text-center">
+                    <h2 id="massage-one" class="text-2xl card-title">Fix Mobile Button Issue </h2>
+                    <p class=" bg-slate-100 ">Debug using Chrome DevTools, check for overlapping elements, and ensure
+                        onClick
+                        works properly
+                        and ensure onClick works properly</p>
+
+                    <div class="botom-container flex text-justify mt-4 ">
+                        <div>
+                            <p>Deadline</p>
+                            <h3 class="text-sm">21 March 2025</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-one" class="bg-[#3752fd] text-white p-4 btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg p-4 h-80 w-70 shadow-md bg-gray-50 overflow-hidden">
+                <p>CloudSync</p>
+                <div class="card-body items-center text-center">
+                    <h2 id="massage-two" class="text-2xl card-title">Add Dark Mode</h2>
+                    <p class="bg-slate-100">Store the user's preference in localStorage, update CSS variables
+                        dynamically, and apply a smooth
+                        transition effect.</p>
+                    <br> <br> <br>
+
+                    <div class="botom-container flex text-justify ">
+                        <div>
+                            <p>Deadline</p>
+                            <h3 class="text-sm">21 March 2025</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-two" class="bg-[#3752fd] text-white p-4 btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg p-4 h-80 w-70 shadow-md bg-gray-50 overflow-hidden">
+                <p>SwiftPay</p>
+                <div class="card-body items-center text-center">
+                    <h2 id="massage-three" class="card-title text-2xl">Optimize Home page</h2>
+                    <p class="bg-slate-100">A card component has a figure, a body part, and inside body there are title
+                        and actions parts</p>
+                    <br><br>
+
+                    <div class="botom-container flex text-justify ">
+                        <div>
+                            <p>Deadline</p>
+                            <h3 class="text-sm">21 March 2025</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-three"
+                                class="bg-[#3752fd] text-white p-4 btn btn-secondary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg p-4 h-80 w-70 shadow-md bg-gray-50 overflow-hidden">
+                <p>Meta</p>
+                <div class="card-body items-center text-center">
+                    <h2 id="massage-four" class=" text-2xl card-title">Add new emoji 🤲 </h2>
+                    <p class="bg-slate-100">A card component has a figure, a body part, and inside body there are title
+                        and actions parts</p>
+                    <br><br><br>
+
+                    <div class="botom-container flex text-justify ">
+                        <div>
+                            <p>Deadline</p>
+                            <h3 class="text-sm">21 March 2025</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-four" class="bg-[#3752fd] text-white p-4 btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg p-4 h-80 w-70 shadow-md bg-gray-50 overflow-hidden">
+                <p>Google LLC</p>
+                <div class="card-body items-center text-center">
+                    <h2 id="massage-five" class="card-title text-2xl">Integrate OpenAI API </h2>
+                    <p class="bg-slate-100">A card component has a figure, a body part, and inside body there are title
+                        and actions parts</p>
+                    <br><br>
+
+                    <div class="botom-container flex text-justify ">
+                        <div>
+                            <p>Deadline</p>
+                            <h3 class="text-sm">21 March 2025</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-five"
+                                class=" bg-[#3752fd] text-white p-4 btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg p-4 h-80 w-70 shadow-md bg-gray-50 overflow-hidden">
+                <p>Glassdoar</p>
+                <div class="card-body items-center text-center">
+                    <h2 id="massage-six" class="card-title text-2xl">Improve Job searching </h2>
+                    <p class="bg-slate-100">A card component has a figure, a body part, and inside body there are title
+                        and actions parts</p>
+                    <br><br>
+
+                    <div class="botom-container flex text-justify ">
+                        <div>
+                            <p>Deadline</p>
+                            <h3 class="text-sm">21 March 2025</h3>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-six" class="bg-[#3752fd] text-white p-4 btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="w-1/4 bg-blue-500 text-white p-4 min-h-screen"> -->
+            <div class="absolute top-20 right-0 w-1/4 min-h-screen bg-white-500 text-black p-4 shadow-lg">
+                <div class=" bg-[#f4f7ff] flex gap-3 w-full justify-center items-center p-2">
+                    <img id="checbook" class=" w-6 h-6" src="./assets/activity.png" alt="checbook">
+                    <p class="items-center">Activity Log</p>
+                </div>
+                <div class="card-actions justify-center items-center mt-4">
+                    <button id="clear-history" class="bg-[#3752fd] text-white p-4 btn btn-primary">Clear
+                        History</button>
+                </div>
+                <hr class="mt-3">
+                <!-- <h2 id="show-massage"></h2> -->
+                <div id="all-massage" class="p-3">
+                    <div class=" m-3 bg-green-50 p-3 border-solid" id="show-massage-one"></div>
+                    <div class=" m-3 bg-green-50 p-3 border-solid" id="show-massage-two"></div>
+                    <div class=" m-3 bg-green-50 p-3 border-solid" id="show-massage-three"></div>
+                    <div class=" m-3 bg-green-50 p-3 border-solid" id="show-massage-four"></div>
+                    <div class=" m-3 bg-green-50 p-3 border-solid" id="show-massage-five"></div>
+                    <div class=" m-3 bg-green-50 p-3 border-solid" id="show-massage-six"></div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="./js/dom.js"></script>
+    <script>
+        document.getElementById("fwd-to-desk").addEventListener("click", function () {
+            window.location.href = "../backToDesk.html";
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to Desk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="w-full shadow-md flex border-solid bottom-6 items-center p-4 text-black justify-between bg-white">
+            <div class="flex">
+                <img class="w-6 h-6" src="./assets/logo.png" alt="logo">
+                <h1>Dev <span class=" font-extrabold">Board</span></h1>
+            </div>
+            <div class="flex p-3 gap-4">
+                <button id="back-to-html" class="bg-[#3752fd] text-white p-4 btn btn-primary">Back to Desk </button>
+            </div>
+        </nav>
+        <hr>
+
+    </header>
+    <main>
+        <div>
+            <h1 class="text-2xl text-center mb-5 font-bold ">Blogs</h1>
+
+        </div>
+        <div>
+            <div class=" border-y border-amber-200 p-4 ">
+                <h3 class="text-base font-bold mb-3">Question-1: What are the different ways to select an element in
+                    theDOM?</h3>
+                <hr class="border-t-1 border-dotted border-gray-300 my-2">
+                <p class="mb-6 ">
+                    1. By Id.
+                    2. Class.
+                    3. Query selector.
+                    4. Query selector all.
+
+                </p>
+            </div>
+            <div class=" border-y border-amber-200 p-4 ">
+                <h3 class="text-base font-bold mb-3">Question-2: What is the difference between innerHTML, innerText,
+                    and textContent ?</h3>
+                <hr class="border-t-1 border-dotted border-gray-300 my-2">
+                <p class="mb-6">
+                    1. innerHTML is with tag its from !DOCTYPE html> to html.
+                    2. innerText and TextContent is only visiable on the DOM scrine.
+                </p>
+            </div>
+            <div class=" border-y border-amber-200 p-4 ">
+                <h3 class="text-base font-bold mb-3">Question-3: What is event delegation in the DOM?</h3>
+                <hr class="border-t-1 border-dotted border-gray-300 my-2">
+                <p class="mb-6">
+                    1. Like a bubblling. when clic html>head>body>div>h1-6>paragrap do click fire that means event.
+                    2. Olternative form fire terget to html bubblling that means delegation.
+                </p>
+            </div>
+            <div class=" border-y border-amber-200 p-4 ">
+                <h3 class="text-base font-bold mb-3">Question-4: What is event bubbling in the DOM?</h3>
+                <hr class="border-t-1 border-dotted border-gray-300 my-2">
+                <p class="mb-6">
+                    1. A bubbling from parents to child and allternative.
+                </p>
+            </div>
+            <div class=" border-y border-amber-200 p-4 ">
+                <h3 class="text-base font-bold mb-3">Question-5: How do you create, add, and remove elements using
+                    JavaScript?</h3>
+                <hr class="border-t-1 border-dotted border-gray-300 my-2">
+                <p class="mb-6">
+                    1. cread elements- document.createElement("tag").
+                    2. add elements - parent.appendChild(newElement).
+                    3. remove element - parent.innerHTML = ""
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.getElementById("back-to-html").addEventListener("click", function () {
+            window.location.href = "../index.html";
+        })
+    </script>
+</body>
+
+</html>
