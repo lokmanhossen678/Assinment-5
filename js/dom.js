@@ -111,6 +111,11 @@ document.getElementById("btn-six").addEventListener("click", function () {
     document.getElementById("btn-six").style.backgroundColor = "transparent";
     document.getElementById("btn-six").disabled = "true";
     alert("Board updated Successfully");
+    
+ 
+    if (convertedSixNumber===1) {
+        alert("congrates!!! You have completed all the current task");
+    }
 
     convertedSixNumber -= 1;
     sixNumber.innerText = convertedSixNumber;
