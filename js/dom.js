@@ -143,3 +143,7 @@ document.getElementById("them").addEventListener("click", function () {
     
 });
 
+const today = new Date();
+const option = {weekday:"long", year:"numeric", month:"long", day:"numeric"};
+document.getElementById("date").textContent = today.toLocaleDateString("en-US", option);
+
